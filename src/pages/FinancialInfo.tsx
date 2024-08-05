@@ -4,13 +4,13 @@ import InfoCard from '../components/InfoCard';
 
 const FinancialInfo: React.FC = () => {
   const financialInfo = [
-    { label: 'Salary', value: '$100,000' },
-    { label: 'Bank Account', value: '1234-5678-9012-3456' },
+    { label: 'Bank Name', value: 'CIB' },
+    { label: 'IBAN', value: '12346546413216446' },
   ];
 
   return (
     <UserLayout>
-      <InfoCard title="Financial Information" info={financialInfo} onEdit={() => {}} />
+      <InfoCard title="Bank Information" info={financialInfo} onEdit={() => {}} />
     </UserLayout>
   );
 };

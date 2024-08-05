@@ -1,20 +1,20 @@
 // src/components/Sidebar.tsx
+import { AccountCircle, Dashboard } from '@mui/icons-material';
+import { List, ListItem, ListItemIcon } from '@mui/material';
 import React from 'react';
-import { List, ListItem, ListItemIcon} from '@mui/material';
-import { Dashboard, AccountCircle } from '@mui/icons-material';
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="p-4">
+    <div>
      
       <List component="nav">
         <ListItem button>
-          <ListItemIcon>
+          <ListItemIcon className='flex items-center justify-center p-2 !min-w-0'>
             <Dashboard />
           </ListItemIcon>
      </ListItem>
         <ListItem button>
-          <ListItemIcon>
+          <ListItemIcon className='flex items-center justify-center p-2 !min-w-0'>
             <AccountCircle />
           </ListItemIcon>
           

@@ -14,7 +14,7 @@ const App: React.FC = () => {
     <ApolloProvider client={client}>
       <Router>
         <Routes>
-          <Route path="/user-profile" element={<UserProfile />} />
+          <Route path="/" element={<UserProfile />} />
           <Route path="/financial-info" element={<FinancialInfo />} />
         </Routes>
       </Router>

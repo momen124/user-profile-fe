@@ -1,4 +1,3 @@
-// src/components/Sidebar.tsx
 import { AccountCircle, Dashboard } from '@mui/icons-material';
 import { List, ListItem, ListItemIcon } from '@mui/material';
 import React from 'react';

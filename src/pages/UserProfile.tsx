@@ -34,7 +34,7 @@ interface User {
   fatherName: string;
   grandfatherName: string;
   familyName: string;
-  localizedName: LocalizedName; // Add this line
+  localizedName: LocalizedName;
   gender?: string;
   nationalities: Nationality[];
   passportNumber?: string;
@@ -145,7 +145,7 @@ const UserProfile: React.FC = () => {
   });
 
   const { data, loading, error } = useQuery<{ user: User }>(GET_USER_BASIC_INFO, {
-    variables: { id: 1 }, // Use actual user ID or context
+    variables: { id: 1 },
   });
 
   const [updateUserBasicInfo] = useMutation(UPDATE_USER_BASIC_INFO);

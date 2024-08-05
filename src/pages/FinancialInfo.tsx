@@ -1,4 +1,3 @@
-// src/pages/FinancialInfo.tsx
 import React from 'react';
 import UserLayout from '../components/Layouts/UserLayout';
 import InfoCard from '../components/InfoCard';

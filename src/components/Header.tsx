@@ -1,7 +1,6 @@
-// src/components/Header.tsx
 import React from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Breadcrumbs, Link } from '@mui/material';
-import { Home, Notifications, AccountCircle, Settings, MarkAsUnread, Markunread } from '@mui/icons-material';
+import { Home, Notifications, Settings, Markunread } from '@mui/icons-material';
 
 const Header: React.FC = () => {
   return (

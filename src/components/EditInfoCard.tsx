@@ -86,7 +86,6 @@ const EditInfoCard: React.FC<EditInfoCardProps> = ({ title, info, userId, onSave
   }, {} as { [key: string]: string });
 
   const { control, handleSubmit } = useForm({ defaultValues });
-
   const [updateUserBasicInfo, { loading, error }] = useMutation(UPDATE_USER_BASIC_INFO);
 
   const onSubmit = async (data: { [key: string]: string }) => {
@@ -129,16 +128,15 @@ const EditInfoCard: React.FC<EditInfoCardProps> = ({ title, info, userId, onSave
             : undefined,
         },
       };
-  
       await updateUserBasicInfo({
         variables: formattedData,
       });
       onSave(formattedData.input);
     } catch (e) {
-      console.error('Mutation error:', e);
+      
     }
   };
-  
+
   return (
     <Card className="mb-4">
       <CardContent>

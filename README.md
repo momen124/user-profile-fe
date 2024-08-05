@@ -1,7 +1,7 @@
 
-## before running the front you have to run the back first
+# before running the front you have to run the back first
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
